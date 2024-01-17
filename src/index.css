@@ -7,10 +7,10 @@ body {
   font-family: 'Times New Roman', Times, serif;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #8555e6;
+  background-color: #3A98B9;
 }
 
 *{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: black;
 }

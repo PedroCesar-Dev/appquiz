@@ -23,12 +23,10 @@ export default function Quiz(){
     }
 
     return (
-    <>
-    <label>Quiz</label>
     <div className='container'>
         
         {showPontuacao ? (<div className='pontuacao'>
-            <span>sua pontuação é {pontos} de {questions.length}</span></div>):(
+            <span>Sua pontuação é {pontos} de {questions.length}</span></div>):(
         <>
         <div className='infoperguntas'>
             <div className='contagemPerguntas'>
@@ -38,15 +36,14 @@ export default function Quiz(){
         </div>
         <div className='resposta'>
             {questions[perguntaAtual].opcoesResposta.map((opcoesResposta) =>
-            <div className='grupoReposta'>
+            <div className='grupoResposta'>
                 <span>{opcoesResposta.alternativa}</span>
-                <button onClick={() => proximaPergunta(opcoesResposta.correta)}>{opcoesResposta.resposta}</button>
+                <button className='btn' onClick={() => proximaPergunta(opcoesResposta.correta)}>{opcoesResposta.resposta}</button>
             </div>)}
             
         </div>
     </>
     )}
    </div> 
-   </>   
   );
 }
